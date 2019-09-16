@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block conteudo %}  
+
+    <h1>Editar Aluno</h1>
+    <form action="/aluno/editar/{{aluno_id}}/" method="post">
+        {% csrf_token %}
+    
+        <div>
+            <label for="nome">Nome:</label>
+            {{form.nome}}
+            {{form.nome.errors}}
+        </div>
+
+    <div>
+            <label for="preco">Preço:</label>
+            {{form.preco}}
+            {{form.preco.errors}}
+        </div>   
+
+
+    <div>
+            <label for="quantidade">Quantidade</label>
+            {{form.quantidade}}
+            {{form.quantidade.errors}}
+        </div>      
+
+
+   
+    <button type="submit">Salvar</button>            
+
+
+
+ </form>
+
+{% endblock %}    
+
+
+

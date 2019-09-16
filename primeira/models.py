@@ -9,7 +9,7 @@ class Carrinho_De_Compras (models.Model):
 class Produto (models.Model):
     nome = models.CharField(max_length=50)
     preco= models.CharField(max_length=11)
-    quantidade= models.CharField(max_length=10)
+    quantidade=models.CharField(max_length=11)
     carrinho_de_compras=models.ForeignKey(Carrinho_De_Compras, on_delete=models.CASCADE) 
    
 
