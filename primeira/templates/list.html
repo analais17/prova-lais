@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
 {% block conteudo %}  
+<form action="/produto/">
+<div>
+    <label for="pesquisa">Pesquisa</label>
+    {{form.produto}}
+    {{form.produto.errors}}
+</div>   
+</form>
     <table border="table">
 
         <tr>

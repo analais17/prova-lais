@@ -7,3 +7,9 @@ class ProdutoForm(ModelForm):
     class Meta:
         model = Produto
         fields = '__all__'
+
+ 
+class PesquisaForm(ModelForm):
+    class Meta:
+        model = Produto
+        fields = '__all__'        

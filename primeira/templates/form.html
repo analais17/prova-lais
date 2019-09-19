@@ -7,10 +7,10 @@
     
         <div>
             <label for="nome">Nome:</label>
-            {{form.nome}}
-            {{form.nome.errors}}
+            {{form.produto}}
+            {{form.produto.errors}}
         </div>
-
+    </form>
     <div>
             <label for="preco">Preço:</label>
             {{form.preco}}
@@ -24,13 +24,18 @@
             {{form.quantidade.errors}}
         </div>      
 
+    <div>
+        <label for="carrinho">Carrinho De Compras</label>
+        {{form.carrinho_de_compras}}
+        {{form.carrinho_de_compras.errors}}
+    </div>      
 
             
     <button type="submit">Salvar</button>            
 
 
 
- </form>
+
 
 {% endblock %}    
 

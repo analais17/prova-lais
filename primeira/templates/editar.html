@@ -2,7 +2,7 @@
 {% block conteudo %}  
 
     <h1>Editar Aluno</h1>
-    <form action="/aluno/editar/{{aluno_id}}/" method="post">
+    <form action="/primeira/editar/{{produto_id}}/" method="post">
         {% csrf_token %}
     
         <div>
@@ -24,7 +24,11 @@
             {{form.quantidade.errors}}
         </div>      
 
-
+    <div>
+            <label for="carrinho">Carrinho De Compras</label>
+            {{form.carrinho_de_compras}}
+            {{form.carrinho_de_compras.errors}}
+    </div>     
    
     <button type="submit">Salvar</button>            
 
